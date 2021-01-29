@@ -131,6 +131,8 @@
         color:white;
         border:none;
         border-radius: 5px;
-        margin-left:4%
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>

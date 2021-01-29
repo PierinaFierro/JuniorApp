@@ -52,10 +52,17 @@
 
         <!-- Configuración de los mensajes referentes a los datepicker-->
         <div class="Mensajes form-row">
-          <!-- Mensaje día de inicio-->
-          <div class="col">
+          <!-- Mensaje día de inicio checked1 = True-->
+          <div class="col" v-if="checked1">
             <small for="datepicker-2">Día de inicio</small>
           </div>
+
+          <!-- Mensaje día de inicio checked1 = False-->
+          <div class="col" v-if="!checked1">
+            <small for="datepicker-2">Día de visita</small>
+          </div>          
+
+          <!-- -->
           <!-- Mensaje día de fin-->
           <div class="col" v-if="checked1">
             <small for="datepicker-2">Día de fin</small>
@@ -198,6 +205,8 @@
         color:white;
         border:none;
         border-radius: 5px;
-        margin-left:4%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
